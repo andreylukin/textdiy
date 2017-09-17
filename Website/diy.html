@@ -5,6 +5,7 @@
     <head>
         <title>DoItYourself</title>
         <link rel="stylesheet" href="style1.css"/>
+        <script src = "script.js"></script>
 
     </head>
 
@@ -29,11 +30,12 @@
             <!--<img src="https://media.giphy.com/media/3o7aCYyAOlwX5gGbFm/giphy.gif"/>
             <p>I'm a CS major at Georgia Tech that likes making websites</p>
             <p>Check out my <a href="http://github.com/mjkaufer">GitHub</a></p>-->
-            <form>
+            <form onsubmit="getPhoneNumber()">
                 Enter your Phone Number:<br>
-                <input type="text" name="firstname"><br>
+                <input id = "num" type="tel"><br>
+                <input type="submit" value="Submit">
             </form>
-            <button type="submit" class="btn border-button-black">Submit</button>
+            <!-- <button type="submit" class="btn border-button-black">Submit</button> -->
         </div>
 
         <br/>
