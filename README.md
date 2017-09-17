@@ -5,7 +5,7 @@ This is our DIY chatbot for the THD codeathlon! The purpose of this chatbot is t
 Text 202-TEXTDIY to start chatting!
 
 
-# TECHNOLOGY
+# Technology
 
 We used Flask, Twilio API, ngrok, Python, MeetUp API, Google APIs, and PostgreSQL for the backend. HTML/CSS and Javascript was used for the landing site.
 
