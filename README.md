@@ -1,10 +1,13 @@
-# textdiy
+# TEXTDIY
 
-This is our DIY chatbot.
+This is our DIY chatbot for the THD codeathlon! The purpose of this chatbot is to provide DIY projects to the masses. It's meant to be able to reach a big audience as possible because 25% of the American population doesn't have a smartphone. It's also meant to be convenient as it doesn't require Wi-Fi and doesn't take up much of your phone's processing power. 
 
 Text 202-TEXTDIY to start chatting!
 
 
+# TECHNOLOGY
+
+We used Flask, Twilio API, ngrok, Python, MeetUp API, Google APIs, and PostgreSQL for the backend. HTML/CSS and Javascript was used for the landing site.
 
 # Commands
 
