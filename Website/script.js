@@ -26,8 +26,25 @@ function getPhoneNumber() {
 	var phoneNum = document.getElementById("num").value
 	var reg = new RegExp('^[0-9]+$');
 	if (phoneNum.length == 11 && reg.test(phoneNum)) {
-		alert(phoneNum);	
+		sendNumber(phoneNum);	
 	} else {
 		alert("Invalid input");
 	}
 }
+
+function sendNumber(phoneNum) {
+    var xhr = new XMLHttpRequest();
+    var url = "https://1861e012.ngrok.io/website";
+    xhr.open("POST", url, false);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        var json = JSON.parse(xhr.responseText);
+        //console.log(json.phone + ", " + json.password);
+    }
+        };
+    var data = JSON.stringify({"phone": phoneNum});
+    xhr.send(data);
+}
+
+
